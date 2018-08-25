@@ -1,10 +1,12 @@
 .content {
     padding: rem-calc(15) 0 0;
+    max-width: 100%;
+    overflow-x: hidden;
 
     &__date {
         text-align: center;
         width: 100%;
-        max-width: rem-calc(360);
+        max-width: rem-calc(300);
         margin: 0 auto;
         position: relative;
         padding-bottom: rem-calc(5); 
@@ -17,8 +19,7 @@
             width: 100%;
             display: block;
             content: '';
-            background: $light-green;
-            background: -webkit-gradient(linear, 0 0, 100% 0, from($body-background), to($body-background), color-stop(50%, $light-green));
+            background: linear-gradient(to right, $body-background, $light-green, $body-background);
         }
     }
 
