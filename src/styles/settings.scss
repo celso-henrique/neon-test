@@ -1,2 +1,13 @@
 $body-background: #094F69;
 $body-font-color: #fff;
+
+$header-styles: (
+  small: (
+    'h2': ('font-size': 19)
+  ),
+  medium: (
+    'h2': ('font-size': 31)
+  ),
+);
+
+$light-green: #93F36F;

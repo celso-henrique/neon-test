@@ -1,0 +1,23 @@
+.header {
+    padding: rem-calc(20) 0;
+    position: relative;
+
+    &__logo {
+        display: block;
+        text-indent: -9999px;
+        background: url('../images/neon-logo-01.png') no-repeat center;
+        position: absolute;
+        height: 25px;
+        width: 28px;
+
+        @include breakpoint(medium) {
+            background: url('../images/neon-logo-02.png') no-repeat center;
+            height: 30px;
+            width: 135px;
+        }
+    }
+
+    &__balance {
+        text-align: center;
+    }
+}

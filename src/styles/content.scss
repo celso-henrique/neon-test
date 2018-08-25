@@ -1,0 +1,30 @@
+.content {
+    padding: rem-calc(15) 0 0;
+
+    &__date {
+        text-align: center;
+        width: 100%;
+        max-width: rem-calc(360);
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: rem-calc(5); 
+
+        &:before {
+            position: absolute;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            content: '';
+            background: $light-green;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from($body-background), to($body-background), color-stop(50%, $light-green));
+        }
+    }
+
+    &__welcome {
+        margin-top: rem-calc(10);
+        font-size: rem-calc(20);
+        text-align: center;
+    }
+}
