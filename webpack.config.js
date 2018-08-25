@@ -1,5 +1,5 @@
 const path = require('path');
-const NunjucksWebpackPlugin = require('nunjucks-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -23,29 +23,51 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader']
-      },
-      {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [autoprefixer]
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules/foundation-sites/scss']
+            }
+          }
+        ]
       },
       {
         test: /\.(njk|nunjucks)$/,
         loader: 'nunjucks-loader'
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'images/[hash]-[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
-    new NunjucksWebpackPlugin({
-      templates: [
-        {
-          from: './src/views/index.njk',
-          to: 'index.html'
-        }
-      ]
-    }),
-    autoprefixer
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html'
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

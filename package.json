@@ -20,12 +20,12 @@
     "css-loader": "^1.0.0",
     "eslint": "^5.4.0",
     "eslint-loader": "^2.1.0",
+    "foundation-sites": "^6.5.0-rc.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
     "node-sass": "^4.9.3",
     "nunjucks": "^3.1.3",
     "nunjucks-loader": "^3.0.0",
-    "nunjucks-webpack-plugin": "^4.0.1",
     "postcss-loader": "^3.0.0",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^7.1.0",
@@ -45,5 +45,9 @@
       "\\.(css|sass)$": "identity-obj-proxy"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^1.1.1"
+  }
 }
