@@ -1,5 +1,6 @@
 const path = require('path');
 const NunjucksWebpackPlugin = require('nunjucks-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
@@ -22,6 +23,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+      {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
@@ -39,7 +44,8 @@ module.exports = {
           to: 'index.html'
         }
       ]
-    })
+    }),
+    autoprefixer
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

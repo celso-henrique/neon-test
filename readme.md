@@ -1,6 +1,6 @@
-Pure JS MVC
+Neon Front-end Test
 ====================
-A simple user register app using [Webpack](https://webpack.js.org/) for bundle and server, [Jest](https://jestjs.io/) for testing, [Less](http://lesscss.org/) and ES6/ES7/ES8. Contains a micro hash router that accepts parameters, a validation class wrapper over HTML5 validityState interface, a numeric mask class that read patterns from data-mask attribute, HTML5 template tag for views, Proxy for model reflection on localStorage and controllers classes.
+A carousel app using [Webpack](https://webpack.js.org/) for bundle and server, [Jest](https://jestjs.io/) for testing, [SASS](https://sass-lang.com/),[Foudation](https://foundation.zurb.com/) and ES6/ES7/ES8.
 
 
 # Install

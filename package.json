@@ -10,6 +10,7 @@
   },
   "author": "Celso Henrique",
   "devDependencies": {
+    "autoprefixer": "^9.1.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
@@ -25,6 +26,7 @@
     "nunjucks": "^3.1.3",
     "nunjucks-loader": "^3.0.0",
     "nunjucks-webpack-plugin": "^4.0.1",
+    "postcss-loader": "^3.0.0",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
