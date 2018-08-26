@@ -1,9 +1,14 @@
 $body-background: #094F69;
-$body-font-color: #fff;
-$light-green: #93F36F;
-$light-blue: #20A8DC;
+$white: #fff;
+$body-font-color: $white;
 $border-color: #3DC1F0;
-
+$foundation-palette: (
+  primary: #20A8DC,
+  secondary: #0E6181,
+  success: #93F36F,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
 $header-styles: (
   small: (
     'h2': ('font-size': 19)

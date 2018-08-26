@@ -1,0 +1,9 @@
+.skipToContent {
+    background: $white;
+
+    &__link {
+        padding: rem-calc(5 0);
+        display: inline-block;
+        margin: 0 auto;
+    }
+}

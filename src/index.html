@@ -5,31 +5,66 @@
     <title>Neon</title>
   </head>
   <body>
+    <div class="skipToContent">
+      <div class="grid-container fluid">
+        <a class="show-on-focus skipToContent__link" href="#content">Pular para o conteúdo</a>
+      </div>
+    </div>
     <header class="header">
       <div class="grid-container fluid">
-        <h1 class="header__logo">Neon</h1>
+        <h1 class="header__logo"><span class="show-for-sr">Neon</span></h1>
         <h2 class="header__balance"><strong>saldo R$100.000.000,00</strong></h2>
       </div>
     </header>
-    <section class="content">
+    <section class="content" id="content">
       <div class="grid-container fluid">
         <p class="content__date"><strong>2017</strong></p>
         <p class="content__welcome"><strong>Bem-vindo</strong></p>
       </div>
       <div class="carousel">
-        <div class="carousel__slide">
-          <div class="carousel__card">
-            <ul class="carousel__list">
-              <li class="carousel__listItem"></li>
-            </ul>
+        <div class="carousel__content">
+          <div class="carousel__slide-active">
+            <div class="carousel__card">
+              <ul class="carousel__list">
+                <li class="carousel__listItem">
+                  <p class="carousel__listCategory"><strong>categoria</strong></p>
+                  <p class="carousel__listTitle">Sua compra aparece aqui</p>
+                  <p class="carousel__listValue"><strong>R$2.000,00</strong></p>
+                  <a class="carousel__deleteButton" title="Apagar este item" aria-label="Apagar este item"><span class="show-for-sr">Apagar</span></a>
+                </li>
+                <li class="carousel__listItem">
+                  <p class="carousel__listCategory"><strong>categoria</strong></p>
+                  <p class="carousel__listTitle">Sua compra aparece aqui</p>
+                  <p class="carousel__listValue-success"><strong>R$2.000,00</strong></p>
+                  <a class="carousel__deleteButton" title="Apagar este item" aria-label="Apagar este item"><span class="show-for-sr">Apagar</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__card">2</div>
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__card">3</div>
           </div>
         </div>
-        <div class="carousel__slide">
-          <div class="carousel__card">2</div>
-        </div>
-        <div class="carousel__slide">
-          <div class="carousel__card">3</div>
-        </div>
+        <ul class="carousel__bullets">
+          <li class="carousel__bulletItem">
+            <a aria-label="Mudar para o item 1" title="Mudar para o item 1" class="carousel__bullet-active">
+              <span class="show-for-sr">Mudar para o item 1</span>
+            </a>
+          </li>
+          <li class="carousel__bulletItem">
+            <a aria-label="Mudar para o item 2" title="Mudar para o item 2" class="carousel__bullet">
+              <span class="show-for-sr">Mudar para o item 2</span>
+            </a>
+          </li>
+          <li class="carousel__bulletItem">
+            <a aria-label="Mudar para o item 3" title="Mudar para o item 3" class="carousel__bullet">
+              <span class="show-for-sr">Mudar para o item 3</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </body>
