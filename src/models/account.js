@@ -1,6 +1,6 @@
 export const account = {
   year: 2017,
-  balance: 549900,
+  balance: 849000,
   statements: [
     [
       {
@@ -16,7 +16,7 @@ export const account = {
       {
         category: 'Tarifas',
         title: 'Tarifa mensal',
-        value: -1
+        value: 1000
       },
       {
         category: 'Depósitos',
@@ -34,6 +34,18 @@ export const account = {
         category: 'Restaurante',
         title: 'Restaurante XPTO',
         value: 100000
+      }
+    ],
+    [
+      {
+        category: 'Depósitos',
+        title: 'Depósito bancário',
+        value: 500000
+      },
+      {
+        category: 'Supermercado',
+        title: 'Mercado XPTO',
+        value: 200000
       }
     ],
     [
