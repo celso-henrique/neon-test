@@ -1,6 +1,6 @@
 Neon Front-end Test
 ====================
-A carousel app using [Webpack](https://webpack.js.org/) for bundle and server, [Jest](https://jestjs.io/) for testing, [SASS](https://sass-lang.com/),[Foudation](https://foundation.zurb.com/) and ES6/ES7/ES8.
+A carousel app using [Webpack](https://webpack.js.org/) for bundle and server, [Jest](https://jestjs.io/) for testing, [SASS](https://sass-lang.com/),[Foudation](https://foundation.zurb.com/) and ES6+.
 
 
 # Install

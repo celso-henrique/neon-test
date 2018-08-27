@@ -1,0 +1,16 @@
+<div class="carousel">
+  <div class="carousel__content">
+    {% for statement in statements %}
+      {% include './carouselSlide.njk' %}
+    {% endfor %}
+  </div>
+  <ul class="carousel__bullets">
+    {% for statement in statements %}
+    <li class="carousel__bulletItem">
+      <a aria-label="Mudar para o item {{loop.index}}" title="Mudar para o item {{loop.index}}" class="carousel__bullet">
+        <span class="show-for-sr">Mudar para o item {{loop.index}}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,18 @@
+<div class="carousel__slide">
+  <div class="carousel__card">
+    <ul class="carousel__list">
+    {% for statementItem in statement %}
+      <li class="carousel__listItem">
+        <p class="carousel__listCategory"><strong>{{statementItem.category}}</strong></p>
+        <p class="carousel__listTitle">{{statementItem.title}}</p>
+        {% if statementItem.category === 'Depósitos' %}
+          <p class="carousel__listValue-success"><strong>R${{statementItem.value|real}}</strong></p>
+        {% else %}
+          <p class="carousel__listValue"><strong>R${{statementItem.value|real}}</strong></p>
+        {% endif %}
+        <a class="carousel__deleteButton" title="Apagar este item" aria-label="Apagar este item"><span class="show-for-sr">Apagar</span></a>
+      </li>
+    {% endfor  %}
+    </ul>
+  </div>
+</div>

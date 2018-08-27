@@ -47,7 +47,10 @@ module.exports = {
       },
       {
         test: /\.(njk|nunjucks)$/,
-        loader: 'nunjucks-loader'
+        loader: 'nunjucks-loader',
+        query: {
+          config: path.join(__dirname, 'nunjucks.config.js')
+        }
       },
       {
         test: /\.(png|jp(e*)g|svg)$/,

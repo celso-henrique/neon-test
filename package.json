@@ -1,7 +1,7 @@
 {
-  "name": "PureJSMVC",
+  "name": "NeonTest",
   "version": "1.0.0",
-  "description": "A simple user register app using Webpack for bundle and server, Jest for testing, Less and ES6/ES7/ES8.",
+  "description": "A carousel app using Webpack for bundle and server, Jest for testing, SASS, Foudation and ES6+.",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -42,7 +42,8 @@
       "node_modules"
     ],
     "moduleNameMapper": {
-      "\\.(css|sass)$": "identity-obj-proxy"
+      "\\.(css|sass)$": "identity-obj-proxy",
+      "\\.(njk|nunjucks)$": "<rootDir>/src/helpers/njkMock/njkMock.js"
     }
   },
   "dependencies": {
